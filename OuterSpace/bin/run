@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "OuterSpace"
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+# require "irb"
+# IRB.start(__FILE__)
+
+
+require 'pry'
+require 'json'
+require 'rest-client'
+
+require_relative '../lib/api.rb'
+require_relative '../lib/cli.rb'
+require_relative '../lib/planets.rb'
+require_relative '../lib/details.rb'
+
+#API.new.retrieve_planets
+# API.new.retrieve_planet_info
+# API.new.parse
+# CLI.start
+ #binding.pry
+
+# API.new.parse
+
+CLI.new.start
